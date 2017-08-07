@@ -1,0 +1,71 @@
+<ion-view title="微信主界面-配置" hide-tabs hide-back-button="true" animation="no-animation" back-state="mainTab.edit" class="pageContainer">
+  <ion-nav-buttons side="left">
+    <div class="buttons" ng-click="myBack()">
+      <button class="button button-icon button-clear">
+        <i class="icon ion-chevron-left">
+        </i>
+      </button>
+    </div>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="list">
+      <div class="item item-icon-right" href="">
+        <span class="item-label">手机型号</span>
+        <span class="item-value">iphone5</span>
+        <div style="clear: both"></div>
+        <i class="icon ion-chevron-right item-vecotr-arrow"></i>
+      </div>
+      <a class="item item-icon-right" href="#commonConfigForList/Config.editor.common.networkType/配置网络类型">
+        <span class="item-label">数据网络类型</span>
+        <span class="item-value">{{editorData.common.networkType.label}}</span>
+        <div style="clear: both"></div>
+        <i class="icon ion-chevron-right item-vecotr-arrow"></i>
+      </a>
+      <a class="item item-icon-right" href="#commonConfigForList/Config.editor.common.operatorShowAble/是否显示运营商">
+        <span class="item-label">是否显示运营商</span>
+        <span class="item-value">{{editorData.common.operatorShowAble.label}}</span>
+        <div style="clear: both"></div>
+        <i class="icon ion-chevron-right item-vecotr-arrow"></i>
+      </a>
+      <a class="item item-icon-right" href="#commonConfigForList/Config.editor.common.operatorType/配置运营商类型" ng-show="editorData.common.operatorShowAble.value=='1'">
+        <span class="item-label">运营商</span>
+        <span class="item-value">{{editorData.common.operatorType.label}}</span>
+        <div style="clear: both"></div>
+        <i class="icon ion-chevron-right item-vecotr-arrow"></i>
+      </a>
+      <div class="item item-icon-right" href="#">
+        <span class="item-label">信号强度</span>
+        <span class="item-value">5</span>
+        <div style="clear: both"></div>
+        <i class="icon ion-chevron-right item-vecotr-arrow"></i>
+      </div>
+      <div class="item item-icon-right" href="#">
+        <span class="item-label">电量</span>
+        <span class="item-value">8</span>
+        <div style="clear: both"></div>
+        <i class="icon ion-chevron-right item-vecotr-arrow"></i>
+      </div>
+      <div class="item item-icon-right" href="#">
+        <span class="item-label">手机时间</span>
+        <span class="item-value">2016-10-11 22:43</span>
+        <div style="clear: both"></div>
+        <i class="icon ion-chevron-right item-vecotr-arrow"></i>
+      </div>
+    </div>
+  </ion-content>
+  <div class="tabs tabs-icon-top">
+    <a class="tab-item tab-item-active">
+      <i class="icon myicon-uniE61B "></i>
+      配置
+    </a>
+    <a class="tab-item" href="#/mainTab/editWXMainFriend">
+      <i class="icon myicon-uniE61C"></i>
+      编辑朋友
+    </a>
+    <a class="tab-item" href="#/mainTab/editWXMainPreview">
+      <i class="icon myicon-uniE61A"></i>
+      预览
+    </a>
+  </div>
+</ion-view>
+

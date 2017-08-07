@@ -1,0 +1,16 @@
+<div class="statusBarA" ng-controller="statusBarACtrl">
+  <div class="statusBarA-right">
+    <now-time></now-time>
+    <span style="height: 75px;line-height: 75px;font-size: 25pt;color: white;display: block;float: right;margin-right: 5px;" ng-show="scopeData.editor.common.operatorShowAble.value=='1'">
+      {{scopeData.editor.common.operatorType.label}}
+    </span>
+    <img src="img/common/a-status-bar-batery-60.png" style="margin-right: 10px;margin-left: 5px;float: right;margin-top: 12px;">
+    <img src="img/common/a-status-bar-signal4.png" style="margin-right: 5px;float: right;margin-top: 12px;">
+    <!--数据信号类型-->
+    <img src="img/common/a-top-network-wifi.png" style="margin-right: -90px;float: right;margin-top: 12px;" ng-show="scopeData.editor.common.networkType.value=='WIFI'">
+    <img src="img/common/a-top-network-3g.png" style="margin-right: -65px;float: right;margin-top: 12px;" ng-show="scopeData.editor.common.networkType.value=='3G'">
+    <img src="img/common/a-top-network-4g.png" style="margin-right: -65px;float: right;margin-top: 12px;" ng-show="scopeData.editor.common.networkType.value=='4G'">
+    <img src="img/common/a-top-network-e.png" style="margin-right: -65px;float: right;margin-top: 12px;" ng-show="scopeData.editor.common.networkType.value=='2G'">
+    <span style="clear: both"></span>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<!--通用的编辑项界面，这里的编辑项是list类型的-->
+<ion-view view-title="{{title}}"  class="pageContainer">
+  <ion-content padding="false">
+    <div class="list">
+      <a class="item item-icon-right" ng-repeat="item in items">
+        {{item.label}}
+        <i class="icon " style="font-size: 15pt;" ng-class="{true:'ion-android-radio-button-on',false:'ion-android-radio-button-off'}[item.selected]" ng-click="select($index)"></i>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

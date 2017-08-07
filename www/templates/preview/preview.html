@@ -1,0 +1,21 @@
+<!--预览界面-->
+<ion-view view-title="预览界面" class="pageContainer"  hide-tabs animation="no-animation"  hide-nav-bar="true" style="overflow-x: scroll;overflow-y: scroll" >
+  <div style="width: {{shotWidth}}px;height: {{shotHeight}}px;overflow-y: scroll;overflow-x: scroll">
+    <div  style="width: {{shotWidth}}px;height: {{shotHeight}}px;">
+      <!--中转div，用于临时渲染-->
+      <div id="transferDiv" style="background: #ffffff;position: relative;width: {{shotWidth }}px;height: {{shotHeight}}px" >
+        <!--引入状态栏模板-->
+        <ng-include src="'templates/preview/statusBar.html'" ></ng-include>
+        <!--动态引入底部栏-->
+        <ng-include src="'templates/preview/wxMainBottom.html'"></ng-include>
+      </div>
+    </div>
+  </div>
+  <div class="preButtons" style="width: {{windowWidth}}px;text-align: center">
+    <div class="button-bar" style="margin: 0 auto;max-width: 350px;">
+      <button class="button button-small icon-left ion-ios-undo button-calm " style="line-height: 34px;" ng-click="myBack()">返回</button>
+      <button class="button button-small icon-left ion-ios-crop-strong button-calm " style="line-height: 34px;" ng-click="saveScreenShot()">保存截图</button>
+      <button class="button button-small icon-left ion-ios-paperplane button-calm " style="line-height: 34px;">去水印</button>
+    </div>
+  </div>
+</ion-view>

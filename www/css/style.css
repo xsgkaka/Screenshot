@@ -1,0 +1,187 @@
+/* Empty. Add your own CSS if you like */
+
+.pageContainer{
+  background: #ECECEC;
+}
+
+.bar-shadow{
+  box-shadow: 0px 1px 5px #888888
+}
+
+.whitePanel{
+  background: #ffffff;
+}
+
+.sub1menuTitle{
+  font-size: 10pt;
+  color: #9e9e9e;
+}
+.sub2menuTitle{
+  font-size: 8pt;
+  color: #9e9e9e;
+}
+.menuBorderLeft{
+  border-left: 1px solid #ECECEC;
+  padding-bottom: 0px;
+}
+.menuBorderLeft i,span{
+  margin: 0 auto;
+}
+.menuBorderBottom {
+  border-bottom: 1px solid #ECECEC;
+  padding-bottom: 0px;
+}
+.menuBorderBottom i,span{
+  margin: 0 auto;
+}
+
+.menuBorderRight{
+  border-right: 1px solid #ECECEC;
+  padding-bottom: 0px;
+}
+.menuBorderRight i,span{
+  margin: 0 auto;
+}
+
+.menuAnchor{
+  font-size: 14pt;
+  color: #ECECEC;
+}
+
+.mainTabsHide{
+  display: none;
+}
+
+.item-label{
+  font-size: 10pt;
+  color: #9e9e9e;
+}
+
+.item-value{
+  font-size: 10pt;
+  color: #9e9e9e;
+  float: right;
+}
+
+.item-vecotr-arrow{
+  font-size: 10pt !important;
+  color: #9e9e9e;
+}
+
+/*自定义的缩略图*/
+.custom-item-thumbnail-left{
+  min-height: 72px !important;
+  max-height: 72px !important;
+}
+.custom-item-thumbnail-left img{
+  width: 50px !important;
+  height:50px !important;
+
+}
+
+
+/*系统状态栏*/
+.statusBarA{
+  width: 100%;
+  background: #4d4d4d;
+  height: 75px;
+}
+.statusBarA-right{
+  float: right;
+  margin-right: 21px;
+  line-height: 75px;
+  display: inline;
+  clear: right;
+  height: 75px;
+}
+.statusBarA-right img{
+  height: 48px;
+  vertical-align:text-bottom;
+}
+.statusBarA-right span{
+  color: #ffffff;
+  font-size: 40px;
+}
+
+/*微信6.3 css*/
+.weixin6{
+
+}
+
+.wxBottom{
+  bottom: 0px;background: #FCFCFC;height: 160px;position: absolute;
+  border-top: 2px solid #d6d6d6;
+  padding-top: 20px;
+}
+
+.wxBottom span{
+  color: #999999;
+  font-size: 34px;
+}
+.wxBottom .icon{
+  font-size: 71px;
+  color: #999999;
+
+}
+.weixin-title{
+  background: #393A3F;
+  height:144px;
+}
+.weixin-title-left{
+  height: 144px;
+  line-height: 144px;
+  margin-left: 40px;
+  float: left;
+  color: #ffffff;
+  font-size: 42pt;
+  margin-top: 0px;
+}
+
+
+.weixin-title-right{
+  margin-right: 70px;
+  color: #ffffff;
+  font-size: 40pt;
+  height: 144px;
+  line-height: 160px;
+  margin-right: 70px;
+  float: right;
+  clear: right;
+}
+/*预览界面上的按钮组*/
+.preButtons{
+  position: absolute;
+  top: 20px;
+  opacity: 0.7;
+  z-index: 999;
+}
+/*微信主界面 对话列表*/
+.wxMainContentItem{
+  height:191px;
+  width:100%;
+  background: #ffffff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.wxMainContentItem .headerImg{
+  height:144px;
+  margin-left: 42px;
+  margin-top: 25px;
+  float: left;
+}
+
+.wxMainContentItem .nameAndMes{
+  width: 850px;
+  margin-left: 186px;
+  height:191px;
+  padding-top: 40px;
+}
+
+.wxMainContentItem .mesDate{
+  color: #bbbbbb;
+  font-size: 35px;
+  float: right;
+  clear: right;
+  margin-top: -5px;
+}
+

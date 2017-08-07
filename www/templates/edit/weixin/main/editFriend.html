@@ -1,0 +1,52 @@
+<!--添加朋友界面-->
+<ion-view view-title="编辑盆友" class="pageContainer"  hide-back-button="true" hide-tabs animation="no-animation" back-state="mainTab.edit">
+  <ion-nav-buttons side="left">
+    <div class="buttons" ng-click="myBack()">
+      <button class="button button-icon button-clear">
+        <i class="icon ion-chevron-left">
+        </i>
+      </button>
+    </div>
+  </ion-nav-buttons>
+  <ion-content class="">
+    <ion-list show-delete="false" show-reorder="false" can-swipe="true">
+      <ion-item ng-repeat="item in friends" class="item-thumbnail-left custom-item-thumbnail-left" >
+        <img ng-src="{{item.img}}">
+        <h2 style="margin-left: -30px;">{{item.nickname}}</h2>
+        <p style="margin-left: -30px;">{{item.talkmsg}}</p>
+        <div style="float: right;margin-top: -40px;">
+          刚刚
+        </div>
+        <ion-option-button class="button-assertive" ng-click="del(item)">
+          删除
+        </ion-option-button>
+        <ion-option-button class="button-info" ng-click="edit(item)">
+          编辑
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+    <div class="row">
+      <div class="col col-10"></div>
+      <div class="col col-80">
+        <button class="button button-full button-calm" ui-sref="addWXFriend">
+          添加盆友
+        </button>
+      </div>
+      <div class="col col-10"></div>
+    </div>
+  </ion-content>
+  <div class="tabs tabs-icon-top">
+    <a class="tab-item" href="#/mainTab/editWXMainConfig">
+      <i class="icon myicon-uniE61B"></i>
+      配置
+    </a>
+    <a class="tab-item tab-item-active">
+      <i class="icon myicon-uniE61C"></i>
+      编辑朋友
+    </a>
+    <a class="tab-item" href="#/mainTab/editWXMainPreview">
+      <i class="icon myicon-uniE61A"></i>
+      预览
+    </a>
+  </div>
+</ion-view>

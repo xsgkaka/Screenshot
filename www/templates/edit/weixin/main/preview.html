@@ -1,0 +1,69 @@
+<!--预览界面-->
+
+<ion-view view-title="预览" class="pageContainer" hide-back-button="true" hide-tabs animation="no-animation"
+          back-state="mainTab.edit">
+  <ion-nav-buttons side="left">
+    <div class="buttons" ng-click="myBack()">
+      <button class="button button-icon button-clear">
+        <i class="icon ion-chevron-left">
+        </i>
+      </button>
+    </div>
+  </ion-nav-buttons>
+  <div style="width: 0px;height: 0px;overflow-y: scroll;overflow-x: scroll;position: absolute;">
+    <div style="width: {{shotWidth}}px;height: {{shotHeight}}px;position: absolute;">
+      <!--中转div，用于临时渲染-->
+      <div id="transferDiv"
+           style="background: #ffffff;position: relative;width: {{shotWidth }}px;height: {{shotHeight}}px">
+        <!--引入状态栏模板-->
+        <ng-include src="'templates/preview/statusBar.html'"></ng-include>
+        <!--引入微信顶栏-->
+        <ng-include src="'templates/preview/wxHeader.html'"></ng-include>
+        <!--引入微信主界面content-->
+        <ng-include src="'templates/preview/wxMainContent.html'"></ng-include>
+        <!--动态引入底部栏-->
+        <ng-include src="'templates/preview/wxMainBottom.html'"></ng-include>
+      </div>
+    </div>
+  </div>
+  <ion-content scroll="true" padding="false">
+    <div class="card" style="padding-top: 0px;padding-bottom: 0px;">
+      <!--临时图片-->
+      <img style="width: 100%;" ng-src="{{img64Data}}">
+    </div>
+    <div class="row">
+      <div class="col col-10"></div>
+      <div class="col col-80">
+        <a class="button button-calm button-full" ng-click="saveScreenShot()">
+          生成截图
+        </a>
+      </div>
+      <div class="col col-10"></div>
+    </div>
+    <div class="row">
+      <div class="col col-10"></div>
+      <div class="col col-80">
+        <a class="button button-full button-balanced" ng-click="">
+          去水印
+        </a>
+      </div>
+      <div class="col col-10"></div>
+    </div>
+    <br>
+    <br>
+  </ion-content>
+  <div class="tabs tabs-icon-top">
+    <a class="tab-item" href="#/mainTab/editWXMainConfig">
+      <i class="icon myicon-uniE61B"></i>
+      配置
+    </a>
+    <a class="tab-item " href="#/mainTab/editWXMainFriend">
+      <i class="icon myicon-uniE61C"></i>
+      编辑朋友
+    </a>
+    <a class="tab-item tab-item-active">
+      <i class="icon myicon-uniE61A"></i>
+      预览
+    </a>
+  </div>
+</ion-view>
